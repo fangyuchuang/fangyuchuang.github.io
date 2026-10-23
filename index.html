@@ -3,15 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>iQiQGame Labs — Free Browser Puzzle &amp; Brain Games</title>
-<meta name="description" content="A small collection of browser puzzle games and maths practice tools: Sudoku variants, the 24 points card game, and quick logic challenges that run without a download.">
+<title>iQiQGame Labs — Puzzle Solvers, Browser Games &amp; Maths Tools</title>
+<meta name="description" content="A small collection of browser puzzle projects, plus an index of 17 puzzle solvers — Sudoku, Killer Sudoku, Kakuro, KenKen, Wordle, Lights Out and more — that show the reasoning instead of just handing over an answer.">
 <meta name="google-site-verification" content="oexMebPjXmDSrN4XWwGWwOo4n_l3T_X425LJtAIvMbc" />
+<link rel="canonical" href="https://fangyuchuang.github.io/">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
          max-width: 760px; margin: 0 auto; padding: 40px 20px; line-height: 1.65; color: #1f2933; background: #fff; }
   h1 { font-size: 1.8rem; margin-bottom: .2em; }
-  h2 { font-size: 1.2rem; margin-top: 2em; border-bottom: 1px solid #e4e7eb; padding-bottom: .3em; }
+  h2 { font-size: 1.2rem; margin-top: 2.2em; border-bottom: 1px solid #e4e7eb; padding-bottom: .3em; }
+  h3 { font-size: 1rem; margin-top: 1.7em; margin-bottom: .4em; color: #243b53; }
   .sub { color: #616e7c; margin-top: 0; }
+  .lead { color: #3e4c59; }
   ul { padding-left: 1.1em; }
   li { margin-bottom: .8em; }
   a { color: #0b6bcb; }
@@ -41,14 +44,147 @@
   </li>
 </ul>
 
+<h2>Puzzle Solvers</h2>
+<p class="lead">
+  Seventeen solvers for the puzzles people actually get stuck on. None of them just print an answer and
+  walk away: each returns the thing you were missing — the move sequence, the cells to delete, the square
+  that was forcing a contradiction — so you can see why the solution works and finish the next grid
+  yourself. All free, no sign-up, and they run in an ordinary browser tab.
+</p>
+
+<h3>Sudoku &amp; grid logic</h3>
+<ul>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/sudoku-solver" rel="noopener">Sudoku Solver</a></strong>
+    — number placement. Returns the completed grid, and tells you which of your own entries was already
+    wrong before it started.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/killer-sudoku-solver" rel="noopener">Killer Sudoku Solver</a></strong>
+    — number placement with cages. Fills the grid and names the cage whose sum could not be met.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/futoshiki-solver" rel="noopener">Futoshiki Solver</a></strong>
+    — inequality grid. Fills the grid and points at the &lt; and &gt; signs that contradict your entries.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/kakuro-solver" rel="noopener">Kakuro Solver</a></strong>
+    — cross sums. Fills the grid, which helps once a run has collected too many candidates to pencil in.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/kenken-solver" rel="noopener">KenKen Solver</a></strong>
+    — cage arithmetic (Calcudoku). Fills the grid and flags the cage targets that clash with your draft.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/skyscraper-solver" rel="noopener">Skyscraper Solver</a></strong>
+    — visibility clues. Fills the grid when the edge clues still leave several arrangements standing.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/takuzu-solver" rel="noopener">Takuzu Solver</a></strong>
+    — binary logic (Binairo). Breaks the deadlock when the colour-balance and no-three-in-a-row rules collide.
+  </li>
+</ul>
+
+<h3>Arithmetic &amp; number targets</h3>
+<ul>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/24-game-solver" rel="noopener">24 Game Solver</a></strong>
+    — arithmetic. Lists every valid expression, which also settles whether a hand has a solution at all.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/make-10-solver" rel="noopener">Make 10 Solver</a></strong>
+    — arithmetic. Returns all the routes to 10 rather than a single one, so you can compare them.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/sumplete-solver" rel="noopener">Sumplete Solver</a></strong>
+    — deletion sums. Tells you exactly which cells to delete when row and column targets cannot both be
+    met by hand.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/mulplete-solver" rel="noopener">Mulplete Solver</a></strong>
+    — deletion products. The same idea with multiplication, for when product targets conflict.
+  </li>
+</ul>
+
+<h3>Sliding &amp; toggle puzzles</h3>
+<ul>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/sliding-puzzle-solver" rel="noopener">Sliding Puzzle Solver</a></strong>
+    — tile sliding, 3&times;3 up to 9&times;9. Returns the minimum move sequence, so you get the optimal path
+    out of a half-solved board rather than a longer one.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/klotski-solver" rel="noopener">Klotski Solver</a></strong>
+    — sliding blocks (Huarong Dao). Returns a step-by-step move plan for when the large block is boxed in.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/lights-out-solver" rel="noopener">Lights Out Solver</a></strong>
+    — toggle logic. Returns the minimal set of toggles that reaches all-off, and can say when a board is
+    unsolvable from the position given.
+  </li>
+</ul>
+
+<h3>Deduction &amp; words</h3>
+<ul>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/wordle-solver" rel="noopener">Wordle Solver</a></strong>
+    — word deduction. Narrows the official answer list to the words still possible and ranks the next guess
+    by how much it splits what is left. Letters ruled out stay ruled out.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/mastermind-solver" rel="noopener">Mastermind Solver</a></strong>
+    — deduction, also good for Bulls and Cows. Returns the candidate list plus the guess that eliminates
+    the most of it.
+  </li>
+  <li>
+    <strong><a href="https://iqiqgame.com/solver/matchstick-equation-solver" rel="noopener">Matchstick Equation Solver</a></strong>
+    — matchstick rearrangement. Names the exact sticks to move when a limited number of moves has to turn a
+    wrong equation into a right one.
+  </li>
+</ul>
+
+<p class="lead">
+  The full index — with a comparison table of what each solver returns and when to reach for it — is on
+  <a href="https://iqiqgame.com/tags/tool-solver" rel="noopener">the puzzle solver index at iQiQGame</a>.
+</p>
+
 <h2>About</h2>
 <p>
   Every project here is built to run in a normal browser tab — no install, no sign-up, no account.
-  The games are also hosted on
+  The games and solvers are also hosted on
   <a href="https://iqiqgame.com" rel="noopener">iQiQGame</a>,
   alongside a larger library of logic puzzles, typing and click-speed trainers, and daily number challenges.
 </p>
 
 <footer>iQiQGame Labs &middot; open puzzle projects</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Puzzle Solvers",
+  "description": "Seventeen free online puzzle solvers that show the reasoning behind the solution.",
+  "numberOfItems": 17,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Sudoku Solver", "url": "https://iqiqgame.com/solver/sudoku-solver"},
+    {"@type": "ListItem", "position": 2, "name": "Killer Sudoku Solver", "url": "https://iqiqgame.com/solver/killer-sudoku-solver"},
+    {"@type": "ListItem", "position": 3, "name": "Futoshiki Solver", "url": "https://iqiqgame.com/solver/futoshiki-solver"},
+    {"@type": "ListItem", "position": 4, "name": "Kakuro Solver", "url": "https://iqiqgame.com/solver/kakuro-solver"},
+    {"@type": "ListItem", "position": 5, "name": "KenKen Solver", "url": "https://iqiqgame.com/solver/kenken-solver"},
+    {"@type": "ListItem", "position": 6, "name": "Skyscraper Solver", "url": "https://iqiqgame.com/solver/skyscraper-solver"},
+    {"@type": "ListItem", "position": 7, "name": "Takuzu Solver", "url": "https://iqiqgame.com/solver/takuzu-solver"},
+    {"@type": "ListItem", "position": 8, "name": "24 Game Solver", "url": "https://iqiqgame.com/solver/24-game-solver"},
+    {"@type": "ListItem", "position": 9, "name": "Make 10 Solver", "url": "https://iqiqgame.com/solver/make-10-solver"},
+    {"@type": "ListItem", "position": 10, "name": "Sumplete Solver", "url": "https://iqiqgame.com/solver/sumplete-solver"},
+    {"@type": "ListItem", "position": 11, "name": "Mulplete Solver", "url": "https://iqiqgame.com/solver/mulplete-solver"},
+    {"@type": "ListItem", "position": 12, "name": "Sliding Puzzle Solver", "url": "https://iqiqgame.com/solver/sliding-puzzle-solver"},
+    {"@type": "ListItem", "position": 13, "name": "Klotski Solver", "url": "https://iqiqgame.com/solver/klotski-solver"},
+    {"@type": "ListItem", "position": 14, "name": "Lights Out Solver", "url": "https://iqiqgame.com/solver/lights-out-solver"},
+    {"@type": "ListItem", "position": 15, "name": "Wordle Solver", "url": "https://iqiqgame.com/solver/wordle-solver"},
+    {"@type": "ListItem", "position": 16, "name": "Mastermind Solver", "url": "https://iqiqgame.com/solver/mastermind-solver"},
+    {"@type": "ListItem", "position": 17, "name": "Matchstick Equation Solver", "url": "https://iqiqgame.com/solver/matchstick-equation-solver"}
+  ]
+}
+</script>
 </body>
 </html>
